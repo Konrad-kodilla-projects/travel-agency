@@ -1,0 +1,1 @@
+1. czy w plikach reduxa ma znaczenie (konwencję), że robią export const zamiast jeden export na końcu?
