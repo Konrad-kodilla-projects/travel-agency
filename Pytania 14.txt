@@ -1,1 +1,5 @@
 1. Czy te funkcje typu utils są normalnym zadaniem dla juniora i warto bez problemu umieć takie napisać?
+
+2. W kodzie:
+    OrderOption.js
+
