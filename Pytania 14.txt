@@ -2,4 +2,19 @@
 
 2. W kodzie:
     OrderOption.js
+    HeroTest.js
+    ParseTrips.js -> te pętle for są tutaj dobrym rozwiązaniem czy raczej lepiej korzystać z metod typu map.forEach?
+    TripSummary.test
+3. Jak się obchodzić z funkcją setState -> podawać cały stan jak w redux/tylko zmieniany element?
 
+4. Czy zadania reacta dla tego kursu krótszego są inne niż tego co trwa 9 miesięcy
+
+5. w której metodzie strzelać do API po dane? componentDidMount?
+
+6. Używa się takiego reactowego "short ifa" => {condition && <p>markup</p>}?
+
+7. Jak jest dużo htmla to robi się oddzielne pliki JSX? są jakieś inne powody do tego? jak to wtedy działa?
+
+8. Redux korzysta z context providera, czy używa się go samego (tworzy kontekst)?
+
+9. Testy -> jaka jest różnica między toBe a toEqual?
