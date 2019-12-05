@@ -43,7 +43,7 @@ czy komponent musi coś zwracać czy może być tak jak jak to zrobiłem tutaj?
 OrderOption.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   setOrderOption: PropTypes.func.isRequired,
 };
 
