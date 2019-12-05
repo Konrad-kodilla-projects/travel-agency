@@ -5,6 +5,7 @@
     HeroTest.js
     ParseTrips.js -> te pętle for są tutaj dobrym rozwiązaniem czy raczej lepiej korzystać z metod typu map.forEach?
     TripSummary.test
+
 3. Jak się obchodzić z funkcją setState -> podawać cały stan jak w redux/tylko zmieniany element?
 
 4. Czy zadania reacta dla tego kursu krótszego są inne niż tego co trwa 9 miesięcy
@@ -18,3 +19,6 @@
 8. Redux korzysta z context providera, czy używa się go samego (tworzy kontekst)?
 
 9. Testy -> jaka jest różnica między toBe a toEqual?
+
+==========
+react -> ref

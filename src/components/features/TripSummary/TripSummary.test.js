@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import TripSummary from './TripSummary';
-import 'jest-prop-type-error';
 
 describe('Component TripSummary', () => {
   const expectedImage = 'image.jpg';
@@ -10,17 +9,29 @@ describe('Component TripSummary', () => {
   const link = '/trip/' + expectedId;
   const [cost, days] = ['$10,000', 10];
 
-  it('should render correct compoment with props', () => {
-    const component = shallow(
+  const allProps = {
+    id: expectedId,
+    image: expectedImage,
+    name: expectedName,
+    tags: [],
+    cost: cost,
+    days: days,
+  };
+
+  const createComponent = ({id, image, name, tags, cost, days}) =>
+    shallow(
       <TripSummary
-        id={expectedId}
-        image={expectedImage}
-        name={expectedName}
-        tags={[]}
+        id={id}
+        image={image}
+        name={name}
+        tags={tags}
         cost={cost}
         days={days}
       />
     );
+
+  it('should render correct compoment with props', () => {
+    const component = createComponent(allProps);
 
     expect(component.find('.link').prop('to')).toEqual(link);
     expect(component.find('img').props()).toEqual({
@@ -41,24 +52,30 @@ describe('Component TripSummary', () => {
     ).toEqual('from ' + cost);
   });
 
-  /* Na rozmowę
-  jak sprawdzić po kolei wszystkie propsy tzn usuwać jeden i sprawdzać czy
-  rzuca bez niego błąd
-  */
-  // it('should throw error without any of required props', () => {
-  //   const component = shallow(
-  //     <TripSummary
-  //       id={expectedId}
-  //       image={expectedImage}
-  //       name={expectedName}
-  //       tags={[]}
-  //       cost={cost}
-  //       days={days}
-  //     />
-  //   );
+  it('should throw error without any of required props', () => {
 
-  //   component.setProps()
-  // });
+    Object.keys(allProps).forEach(myProp => {
+      const component = () => createComponent({...allProps, [myProp]:null});
+      expect(component).toThrow();
+    });
+  });
+
+  it('render tags array', () => {
+    const tagObject = {
+      tags: ['1', '2', '3'],
+    };
+    const component = createComponent(allProps);
+    component.setProps(tagObject);
+
+    tagObject.tags.forEach((tag, id) =>
+      expect(
+        component
+          .find('.tags span')
+          .at(id)
+          .text()
+      ).toEqual(tag)
+    );
+  });
 
   it('should throw error without required props', () => {
     const component = () => shallow(<TripSummary />);

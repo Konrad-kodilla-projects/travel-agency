@@ -21,9 +21,6 @@
   "lint-staged": {
     "src/**/*.js": "eslint"
   },
-  "setupFiles": [
-    "jest-prop-type-error"
-  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -4,7 +4,7 @@ import Hero from './Hero';
 /* Na rozmowę
 bez tego importu nie sprawdza propsów
 */
-import 'jest-prop-type-error';
+// import 'jest-prop-type-error';
 
 describe('Component Hero', () => {
   it('should render without crashing', () => {
