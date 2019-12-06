@@ -21,10 +21,12 @@ class OrderOptionDate extends React.Component {
 
   render() {
     return (
-      <DatePicker
-        selected={this.state.startDate}
-        onChange={this.handleChange}
-      />
+      <div>
+        <DatePicker
+          selected={this.state.startDate}
+          onChange={this.handleChange}
+        />
+      </div>
     );
   }
 }

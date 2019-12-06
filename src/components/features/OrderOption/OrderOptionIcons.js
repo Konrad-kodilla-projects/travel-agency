@@ -14,11 +14,10 @@ const OrderOptionIcons = ({
 }) => (
   <div
     className={styles.component}
-    // value={currentValue}
-    // onChange={event => setOptionValue(event.currentTarget.value)}
   >
-    {required ? '' : (
-      // setOptionValue('')
+    {required ? (
+      ''
+    ) : (
       <div onClick={setOptionValue('')}>
         <Icon name='times-circle' />
         none
@@ -27,15 +26,12 @@ const OrderOptionIcons = ({
     {values.map(value => (
       <div
         key={value.id}
-        className={`${styles.icon} ${value.id === currentValue ? styles.iconActive : null}`}
-
-        /* Tutaj ten onClick zrobilem bo nie miałem lepszego pomysłu bo */
-        // onClick={setOptionValue.bind(value.id)}
-        // wywalało mi błąd
-
+        className={`${styles.icon} ${
+          value.id === currentValue ? styles.iconActive : null
+        }`}
         onClick={() => setOptionValue(value.id)}
       >
-        <Icon name={value.icon}/>
+        <Icon name={value.icon} />
         {value.name} {formatPrice(value.price)}
       </div>
     ))}

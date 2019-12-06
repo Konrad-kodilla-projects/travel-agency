@@ -1,0 +1,1 @@
+1. Czy i jak testuje się reduxa? i jak testuje się czy dany komponent wysyła info do stora?

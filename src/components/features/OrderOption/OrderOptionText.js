@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 
 const OrderOptionText = ({ id, setOptionValue }) => (
   <div>
-    <input type="text" id={id} onChange={event => setOptionValue(event.target.value)}/>
+    <input
+      type='text'
+      id={id}
+      onChange={event => setOptionValue(event.target.value)}
+    />
   </div>
 );
 

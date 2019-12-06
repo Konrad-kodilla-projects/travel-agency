@@ -20,7 +20,7 @@ const OrderOptionNumber = ({
       value={currentValue}
       min={limits.min}
       max={limits.max}
-      onChange={() => setOptionValue(Number(event.target.value))}
+      onChange={ event => setOptionValue(Number(event.target.value))}
     />{' '}
     {formatPrice(
       parseOptionPrice(price).value *
