@@ -210,10 +210,19 @@ for (let type in optionTypes) {
       }
       case 'date': {
         it('renders Date Picker', () => {
-          // console.log(component.debug());
           // console.log(subcomponent.debug());
-          // expect(subcomponent.find('DatePicker').length).toBe(1);
+          const DatePicker = subcomponent.find('t');
+          expect(DatePicker.length).toBe(1);
         });
+
+        it('should run setOrderOption function on change', () => {
+          subcomponent.find('t').simulate('change', testValue);
+          expect(mockSetOrderOption).toBeCalledTimes(1);
+          expect(mockSetOrderOption).toBeCalledWith({
+            [mockProps.id]: testValue,
+          });
+        });
+
         break;
       }
     }
