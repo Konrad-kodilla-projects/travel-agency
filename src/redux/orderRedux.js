@@ -1,6 +1,7 @@
 // selectors
 export const getOrder = ({order}) => order;
 export const getOrderOptions = ({order}) => order.options;
+export const getTripByID = ({trips}, id) => trips.filter(trip => trip.id === id)[0];
 
 // action name creator
 const reducerName = 'order';

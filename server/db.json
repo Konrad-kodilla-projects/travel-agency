@@ -37,6 +37,76 @@
       "start-date": "",
       "totalCost": "$139,399",
       "id": 3
+    },
+    {
+      "car-rental": "",
+      "accommodation": "suite",
+      "features": [
+        "kitchen",
+        "pool",
+        "security"
+      ],
+      "adults": 1,
+      "children": 2,
+      "name": "name",
+      "contact": "info",
+      "start-date": "",
+      "totalCost": "$286,797",
+      "tripID": "5cc1d1014c75f672e46ef6d7",
+      "country": "Timor-Leste",
+      "code": "TLS",
+      "id": 4
+    },
+    {
+      "car-rental": "",
+      "accommodation": "suite",
+      "features": [
+        "kitchen",
+        "pool",
+        "security"
+      ],
+      "adults": 1,
+      "children": 2,
+      "name": "name",
+      "contact": "info",
+      "start-date": "2019-12-25T11:37:16.000Z",
+      "totalCost": "$286,797",
+      "tripID": "5cc1d1014c75f672e46ef6d7",
+      "country": "Timor-Leste",
+      "code": "TLS",
+      "id": 5
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "asd",
+      "contact": "ddd",
+      "start-date": "",
+      "totalCost": "$139,399",
+      "tripID": "5cc1d1014c75f672e46ef6d7",
+      "country": "Timor-Leste",
+      "code": "TLS",
+      "id": 6
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "suite",
+      "features": [
+        "pool"
+      ],
+      "adults": 11223,
+      "children": 6,
+      "name": "asd",
+      "contact": "asd",
+      "start-date": "",
+      "totalCost": "$1,583,968,955",
+      "tripID": "5cc1d1014c75f672e46ef6d7",
+      "country": "Timor-Leste",
+      "code": "TLS",
+      "id": 7
     }
   ]
 }
