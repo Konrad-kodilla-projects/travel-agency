@@ -1,1 +1,4 @@
 1. Czy i jak testuje się reduxa? i jak testuje się czy dany komponent wysyła info do stora?
+
+2. Co powinno się testować w komponentach? czy się renderuje i poza tym jakie są inne standardowe testy?
+
