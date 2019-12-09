@@ -18,7 +18,7 @@ const OrderOptionIcons = ({
     {required ? (
       ''
     ) : (
-      <div onClick={setOptionValue('')}>
+      <div onClick={() => setOptionValue('')}>
         <Icon name='times-circle' />
         none
       </div>

@@ -163,7 +163,7 @@ for (let type in optionTypes) {
           /* Napisałem w to be callled 2 bo jak required jest false to z automatu
             strzela funkcja z pustym stringiem -> czy tak ma być czy coś zmieniać
             w pliku OrderOptionIcons żeby strzelała tylko raz? */
-          expect(mockSetOrderOption).toBeCalledTimes(2);
+          expect(mockSetOrderOption).toBeCalledTimes(1);
           expect(mockSetOrderOption).toBeCalledWith({
             [mockProps.id]: testValue,
           });
